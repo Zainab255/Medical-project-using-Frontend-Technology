@@ -1,0 +1,3 @@
+#00B4CC teal 40%
+white 50%
+#ff4701 orange shade 10%

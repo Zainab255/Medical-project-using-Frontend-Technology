@@ -1,0 +1,37 @@
+<section>
+        <div style="text-align: center; background-image:url('{{asset('pic/homebg.jpeg')}}');background-repeat:no-repeat;background-size: cover; padding: 8%;">
+            <h1>OUR SERVICES</h1>
+            <p style="width: 50%; margin: 3% 30% 3% 30%;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim fuga, inventore distinctio, expedita perspiciatis reprehenderit quas ipsum dolores dicta deserunt
+                 blanditiis temporibus ea eveniet aliquid placeat deleniti harum commodi maxime, quasi architecto quos eos aspernatur?
+                </p>
+                <div class="container">
+                    <div class="row bg-light">
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <img src="{{asset('pic/home_s1.png')}}" alt="" height="80px" width="80px">
+                            <h6>24 HOUR BACK UP POWER SYSTEM</h6>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <img src="{{asset('pic/home_s2.png')}}" alt="" height="80px" width="80px">
+                            <h6>AUDIO-VISUAL EQUIPMENT</h6>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <img src="{{asset('pic/home_s3.jpeg')}}" alt="" height="80px" width="80px">
+                            <h6>VIDEO CONFERENCING</h6>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <img src="{{asset('pic/home_s4.png')}}" alt="" height="80px" width="80px">
+                            <h6>CONVENTION SERVICES</h6>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <img src="{{asset('pic/home_s5.png')}}" alt="" height="80px" width="80px">
+                            <h6>TECHNICIANS</h6>
+                        </div>
+                        <div class="col-lg-2 col-md-3 col-sm-4">
+                            <img src="{{asset('pic/wifi-solid.svg')}}" alt="" height="80px" width="80px">
+                            <h6>HIGH-SPEED WI-FI INTERNET</h6>
+                        </div>
+                    </div>
+                </div>
+                <button type="submit" style="height: 7%;width: 13%; margin-top: 4%;"><a href="{{asset('service')}}" style="text-decoration: none;color:black;">Details</a></button>
+        </div>
+    </section>

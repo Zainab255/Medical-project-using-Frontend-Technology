@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Register in Medical Haven</title>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+        .custom-nav a{
+            color: #00B4CC;
+          }
+          .custom-nav a:hover{
+            color:#16c9e1;
+          }
+          
+          .custom1-nav{
+            background-color: #00B4CC;
+          }
+          .custom1-nav a{
+            color:white;
+          }
+          .custom1-nav:hover{
+            background-color: #16c9e1;
+          
+          }
+          .custom1-nav a:hover{
+            color:white;
+          }
+*{
+  
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+body{
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  max-width: 700px;
+  width: 100%;
+  margin-top:50px;
+  background-color: #fff;
+  padding: 25px 30px;
+  border-radius: 5px;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+}
+.container .title{
+  font-size: 25px;
+  font-weight: 500;
+  position: relative;
+}
+.container .title::before{
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #71b7e6, #9b59b6);
+}
+.content form .user-details{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 20px 0 12px 0;
+}
+form .user-details .input-box{
+  margin-bottom: 15px;
+  width: calc(100% / 2 - 20px);
+}
+form .input-box span.details{
+  display: block;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.user-details .input-box input{
+  height: 45px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  padding-left: 15px;
+  border: 1px solid #ccc;
+  border-bottom-width: 2px;
+  transition: all 0.3s ease;
+}
+.user-details .input-box input:focus,
+.user-details .input-box input:valid{
+  border-color: #9b59b6;
+}
+ form .gender-details .gender-title{
+  font-size: 20px;
+  font-weight: 500;
+ }
+ form .category{
+   display: flex;
+   width: 80%;
+   margin: 14px 0 ;
+   justify-content: space-between;
+ }
+ form .category label{
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+ }
+ form .category label .dot{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-right: 10px;
+  background: #d9d9d9;
+  border: 5px solid transparent;
+  transition: all 0.3s ease;
+}
+ #dot-1:checked ~ .category label .one,
+ #dot-2:checked ~ .category label .two,
+ #dot-3:checked ~ .category label .three{
+   background: #9b59b6;
+   border-color: #d9d9d9;
+ }
+ form input[type="radio"]{
+   display: none;
+ }
+ form .button{
+   height: 45px;
+   margin: 35px 0
+ }
+ form .button input{
+   height: 100%;
+   width: 100%;
+   border-radius: 5px;
+   border: none;
+   color: #fff;
+   font-size: 18px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+   background: linear-gradient(135deg, #71b7e6, #9b59b6);
+ }
+ form .button input:hover{
+  /* transform: scale(0.99); */
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  }
+ @media(max-width: 584px){
+ .container{
+  max-width: 100%;
+}
+form .user-details .input-box{
+    margin-bottom: 15px;
+    width: 100%;
+  }
+  form .category{
+    width: 100%;
+  }
+  .content form .user-details{
+    max-height: 300px;
+    overflow-y: scroll;
+  }
+  .user-details::-webkit-scrollbar{
+    width: 5px;
+  }
+  }
+  @media(max-width: 459px){
+  .container .content .category{
+    flex-direction: column;
+  }
+}
+     </style>
+   </head>
+<body>
+    <nav class="navbar navbar-expand-lg shadow-lg sticky-top bg-white">
+        <div class="container-fluid">
+          <!-- Logo on the left -->
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" width="40px" height="40px">
+            <b style="color: #00B4CC;"><i>  <b>Medical Haven</b></i></b>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+          <!-- Navigation items on the right -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">  Home</a>
+              </li>
+              <li class="nav-item" id="dropdown">
+                <a class="nav-link active" aria-current="page" href="welcome.html"> Our Purpose</a>
+                
+              </li><li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Features
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="find doctor.htm"> Find Doctors</a></li>
+                </ul></li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Our Team
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="doctors.html"> Doctors</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+      
+                    <li><a class="dropdown-item" href="nurses.html"> Nurses</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+      
+                    <li><a class="dropdown-item" href="lab-attendend.html"> SWweepers</a></li>
+                  </ul></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Departments
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="surgries.html"> Surgery </a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+        
+                      <li><a class="dropdown-item" href="opd.html"> ODP</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+        
+                      <li><a class="dropdown-item" href="labs.html"> Labs</a></li>
+                    </ul>
+                  </li>
+                  
+              <!-- Add other list items here -->
+              <li class="nav-item">
+                <a class="nav-link" href="contact2.html"> Contact Us</a>
+              </li>
+              <li class="custom-nav nav-item me-auto mb-lg-0 btn rounded-5 p-0 px-2 mx-2" >
+              <a class="nav-link" href="login.html"> Login</a>
+    
+            </li>
+    
+            <li class="custom1-nav nav-item me-auto mb-lg-0 btn rounded-5 p-0 px-2 mx-2 ">
+              <a class="nav-link" href="sign.html"> Signup</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+
+
+  <div class="container">
+    <div class="title">Registration</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Username</span>
+            <input type="text" placeholder="Enter your username" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your email" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Phone Number</span>
+            <input type="text" placeholder="Enter your number" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="text" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" required>
+          </div>
+        </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
+    </div>
+  </div><br><br><br><br><br>
+
+<div class="text-center">
+  <h5 style="color: #02090a;">  <b>Follow Us </b></h5>
+  <ul class="footer-social list-unstyled">
+    <li class="d-inline p-2" style="color: black;"><a href="#"><i class="fa fa-facebook" style="color: black;"></i></a></li>
+    <li class="d-inline p-2" style="color: black;"><a href="#"><i class="fa fa-twitter" style="color: black;"></i></a></li>
+    <li class="d-inline p-2" style="color: black;"><a href="#"><i class="fa fa-instagram" style="color: black;"></i></a></li>
+    <li class="d-inline p-2" style="color: black;"><a href="#"><i class="fa fa-linkedin" style="color: black;"></i></a></li>
+  </ul>
+  <br> 
+  <hr>
+  <footer>
+      <div class="row">
+        <div class="col-md-4 text-center">
+          <h5>  <b>Quick Links </b></h5>
+          <ul class="footer-links list-unstyled">
+            <li><a class="text-decoration-none" style="color: #00B4CC;"href="labs.html">Our labs</a></li>
+            <li><a class="text-decoration-none"style="color: #00B4CC;" href="surgries.html">Our surgeries</a></li>
+            <li><a class="text-decoration-none"style="color: #00B4CC;" href="nurses.html">Our nurses</a></li>
+            <li><a class="text-decoration-none" style="color: #00B4CC;"href="lab-attendend.html">Our sweepers</a></li>
+
+          </ul>
+        </div>
+        <div class="col-md-4 text-center">
+          <h5>  <b>Our Departments</b></h5>
+          <ul class="footer-links list-unstyled">
+
+            <li><a   class="text-decoration-none" style="color: #00B4CC;" href="medical oncology.htm">All</a></li>
+            <li><a class="text-decoration-none" style="color: #00B4CC;"href="Paedartic Surgery .htm">Paedtratic surgery</a></li>
+            <li><a class="text-decoration-none" style="color: #00B4CC;" href="Emergency.htm">Emergency</a></li>
+            <li><a class="text-decoration-none" style="color: #00B4CC;" href="Obstatricas and gynecology.htm">Gynae and Obstetrics</a></li>
+
+            <li><a class="text-decoration-none" style="color: #00B4CC;" href="radiology.htm">Radiology</a></li>
+            <li><a class="text-decoration-none" style="color: #00B4CC;" href="Plastic Surgery .htm">Plastic surgery</a></li>
+
+
+
+          </ul>
+         
+        </div>
+        <div class="col-md-4 text-center">
+          <h5> <b>About us </b></h5>
+          <ul class="footer-links list-unstyled">
+            <li><a class="text-decoration-none" style="color: #00B4CC;" href="index.html">Home</a></li>
+            <li><a class="text-decoration-none"  style="color: #00B4CC;" href="contact.html">Contact us</a></li>
+            <li><a class="text-decoration-none" style="color: #00B4CC;" href="vision.html">Our Vision</a></li>
+            <li><a class="text-decoration-none" style="color: #00B4CC;" href="mission.html">Our Mission</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+  </footer>
+</div>
+  <hr> 
+  <div class="">
+    <div class="container text-center" >
+      <p><b><i>&copy; 2023 Medical Haven. All rights reserved.</i></b></p>
+    </div>
+  </div>
+</body>
+</html>

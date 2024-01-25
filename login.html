@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Medical haven</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+    /* navigation bar start*/
+.custom-nav a{
+    color: #00B4CC;
+  }
+  .custom-nav a:hover{
+    color:#16c9e1;
+  }
+  
+  .custom1-nav{
+    background-color: #00B4CC;
+  }
+  .custom1-nav a{
+    color:white;
+  }
+  .custom1-nav:hover{
+    background-color: #16c9e1;
+  
+  }
+  .custom1-nav a:hover{
+    color:white;
+  }
+  
+
+body{
+ 
+  justify-content: center;
+}
+::selection{
+  color: #fff;
+  background: #5372F0;
+}
+.wrapper{
+  width: 380px;
+  padding: 40px 30px 50px 30px;
+  background: #fff;
+  border-radius: 5px;
+  align-items: center;
+  margin-top:50px;
+  margin-left:500px;
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.1);
+}
+.wrapper header{
+  font-size: 35px;
+  font-weight: 600;
+}
+.wrapper form{
+  margin: 40px 0;
+}
+form .field{
+  width: 100%;
+  margin-bottom: 20px;
+}
+form .field.shake{
+  animation: shake 0.3s ease-in-out;
+}
+@keyframes shake {
+  0%, 100%{
+    margin-left: 0px;
+  }
+  20%, 80%{
+    margin-left: -12px;
+  }
+  40%, 60%{
+    margin-left: 12px;
+  }
+}
+form .field .input-area{
+  height: 50px;
+  width: 100%;
+  position: relative;
+}
+form input{
+  width: 100%;
+  height: 100%;
+  outline: none;
+  padding: 0 45px;
+  font-size: 18px;
+  background: none;
+  caret-color: #5372F0;
+  border-radius: 5px;
+  border: 1px solid #bfbfbf;
+  border-bottom-width: 2px;
+  transition: all 0.2s ease;
+}
+form .field input:focus,
+form .field.valid input{
+  border-color: #5372F0;
+}
+form .field.shake input,
+form .field.error input{
+  border-color: #dc3545;
+}
+.field .input-area i{
+  position: absolute;
+  top: 50%;
+  font-size: 18px;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+.input-area .icon{
+  left: 15px;
+  color: #bfbfbf;
+  transition: color 0.2s ease;
+}
+.input-area .error-icon{
+  right: 15px;
+  color: #dc3545;
+}
+form input:focus ~ .icon,
+form .field.valid .icon{
+  color: #5372F0;
+}
+form .field.shake input:focus ~ .icon,
+form .field.error input:focus ~ .icon{
+  color: #bfbfbf;
+}
+form input::placeholder{
+  color: #bfbfbf;
+  font-size: 17px;
+}
+form .field .error-txt{
+  color: #dc3545;
+  text-align: left;
+  margin-top: 5px;
+}
+form .field .error{
+  display: none;
+}
+form .field.shake .error,
+form .field.error .error{
+  display: block;
+}
+form .pass-txt{
+  text-align: left;
+  margin-top: -10px;
+}
+.wrapper a{
+  color: #5372F0;
+  text-decoration: none;
+}
+.wrapper a:hover{
+  text-decoration: underline;
+}
+form input[type="submit"]{
+  height: 50px;
+  margin-top: 30px;
+  color: #fff;
+  padding: 0;
+  border: none;
+  background: #5372F0;
+  cursor: pointer;
+  border-bottom: 2px solid rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+form input[type="submit"]:hover{
+  background: #2c52ed;
+}
+  </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg shadow-lg sticky-top bg-white">
+        <div class="container-fluid">
+          <!-- Logo on the left -->
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" width="40px" height="40px">
+            <b style="color: #00B4CC;"><i>  <b>Medical Haven</b></i></b>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+          <!-- Navigation items on the right -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">  Home</a>
+              </li>
+              <li class="nav-item" id="dropdown">
+                <a class="nav-link active" aria-current="page" href="welcome.html"> Our Purpose</a>
+                
+              </li><li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Features
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="find doctor.htm"> Find Doctors</a></li>
+                </ul></li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Our Team
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="doctors.html"> Doctors</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+      
+                    <li><a class="dropdown-item" href="nurses.html"> Nurses</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+      
+                    <li><a class="dropdown-item" href="lab-attendend.html"> SWweepers</a></li>
+                  </ul></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Departments
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="surgries.html"> Surgery </a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+        
+                      <li><a class="dropdown-item" href="opd.html"> ODP</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+        
+                      <li><a class="dropdown-item" href="labs.html"> Labs</a></li>
+                    </ul>
+                  </li>
+                  
+              <!-- Add other list items here -->
+              <li class="nav-item">
+                <a class="nav-link" href="contact2.html"> Contact Us</a>
+              </li>
+              <li class="custom-nav nav-item me-auto mb-lg-0 btn rounded-5 p-0 px-2 mx-2" >
+              <a class="nav-link" href="login.html"> Login</a>
+    
+            </li>
+    
+            <li class="custom1-nav nav-item me-auto mb-lg-0 btn rounded-5 p-0 px-2 mx-2 ">
+              <a class="nav-link" href="sign.html"> Signup</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+    </nav>
+  <div class="wrapper">
+    <header>Login Form</header>
+    <form action="#">
+      <div class="field email">
+        <div class="input-area">
+          <input type="text" placeholder="Email Address">
+          <i class="icon fas fa-envelope"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Email can't be blank</div>
+      </div>
+      <div class="field password">
+        <div class="input-area">
+          <input type="password" placeholder="Password">
+          <i class="icon fas fa-lock"></i>
+          <i class="error error-icon fas fa-exclamation-circle"></i>
+        </div>
+        <div class="error error-txt">Password can't be blank</div>
+      </div>
+      <div class="pass-txt"><a href="#">Forgot password?</a></div>
+      <input type="submit" value="Login">
+    </form>
+    <div class="sign-txt">Not yet member? <a href="#">Signup now</a></div>
+  </div><br>
+
+  <div class="text-center">
+    <h5 style="color: #02090a;">  <b>Follow Us </b></h5>
+    <ul class="footer-social list-unstyled">
+      <li class="d-inline p-2" style="color: black;"><a href="#"><i class="fa fa-facebook" style="color: black;"></i></a></li>
+      <li class="d-inline p-2" style="color: black;"><a href="#"><i class="fa fa-twitter" style="color: black;"></i></a></li>
+      <li class="d-inline p-2" style="color: black;"><a href="#"><i class="fa fa-instagram" style="color: black;"></i></a></li>
+      <li class="d-inline p-2" style="color: black;"><a href="#"><i class="fa fa-linkedin" style="color: black;"></i></a></li>
+    </ul>
+    <br> 
+    <hr>
+    <footer>
+        <div class="row">
+          <div class="col-md-4 text-center">
+            <h5>  <b>Quick Links </b></h5>
+            <ul class="footer-links list-unstyled">
+              <li><a class="text-decoration-none" style="color: #00B4CC;"href="labs.html">Our labs</a></li>
+              <li><a class="text-decoration-none"style="color: #00B4CC;" href="surgries.html">Our surgeries</a></li>
+              <li><a class="text-decoration-none"style="color: #00B4CC;" href="nurses.html">Our nurses</a></li>
+              <li><a class="text-decoration-none" style="color: #00B4CC;"href="lab-attendend.html">Our sweepers</a></li>
+  
+            </ul>
+          </div>
+          <div class="col-md-4 text-center">
+            <h5>  <b>Our Departments</b></h5>
+            <ul class="footer-links list-unstyled">
+  
+              <li><a   class="text-decoration-none" style="color: #00B4CC;" href="medical oncology.htm">All</a></li>
+              <li><a class="text-decoration-none" style="color: #00B4CC;"href="Paedartic Surgery .htm">Paedtratic surgery</a></li>
+              <li><a class="text-decoration-none" style="color: #00B4CC;" href="Emergency.htm">Emergency</a></li>
+              <li><a class="text-decoration-none" style="color: #00B4CC;" href="Obstatricas and gynecology.htm">Gynae and Obstetrics</a></li>
+  
+              <li><a class="text-decoration-none" style="color: #00B4CC;" href="radiology.htm">Radiology</a></li>
+              <li><a class="text-decoration-none" style="color: #00B4CC;" href="Plastic Surgery .htm">Plastic surgery</a></li>
+  
+  
+  
+            </ul>
+           
+          </div>
+          <div class="col-md-4 text-center">
+            <h5> <b>About us </b></h5>
+            <ul class="footer-links list-unstyled">
+              <li><a class="text-decoration-none" style="color: #00B4CC;" href="index.html">Home</a></li>
+              <li><a class="text-decoration-none"  style="color: #00B4CC;" href="contact.html">Contact us</a></li>
+              <li><a class="text-decoration-none" style="color: #00B4CC;" href="vision.html">Our Vision</a></li>
+              <li><a class="text-decoration-none" style="color: #00B4CC;" href="mission.html">Our Mission</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+    </footer>
+  </div>
+    <hr> 
+    <div class="">
+      <div class="container text-center" >
+        <p><b><i>&copy; 2023 Medical Haven. All rights reserved.</i></b></p>
+      </div>
+    </div>
+
+  <script>
+    const form = document.querySelector("form");
+eField = form.querySelector(".email"),
+eInput = eField.querySelector("input"),
+pField = form.querySelector(".password"),
+pInput = pField.querySelector("input");
+
+form.onsubmit = (e)=>{
+  e.preventDefault(); 
+  (eInput.value == "") ? eField.classList.add("shake", "error") : checkEmail();
+  (pInput.value == "") ? pField.classList.add("shake", "error") : checkPass();
+
+  setTimeout(()=>{ 
+    eField.classList.remove("shake");
+    pField.classList.remove("shake");
+  }, 500);
+
+  eInput.onkeyup = ()=>{checkEmail();} 
+  pInput.onkeyup = ()=>{checkPass();} 
+
+  function checkEmail(){ 
+    let pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/; 
+    if(!eInput.value.match(pattern)){ 
+      eField.classList.add("error");
+      eField.classList.remove("valid");
+      let errorTxt = eField.querySelector(".error-txt");
+      (eInput.value != "") ? errorTxt.innerText = "Enter a valid email address" : errorTxt.innerText = "Email can't be blank";
+    }else{ 
+      eField.classList.remove("error");
+      eField.classList.add("valid");
+    }
+  }
+
+  function checkPass(){ 
+    if(pInput.value == ""){ 
+      pField.classList.add("error");
+      pField.classList.remove("valid");
+    }else{ 
+      pField.classList.remove("error");
+      pField.classList.add("valid");
+    }
+  }
+
+  
+  if(!eField.classList.contains("error") && !pField.classList.contains("error")){
+    window.location.href = form.getAttribute("action"); 
+  }
+}
+  </script>
+
+</body>
+</html>

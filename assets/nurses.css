@@ -1,0 +1,29 @@
+@keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.nrs{
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the card */
+.nurse{
+    animation: zoomIn 1s ease-in-out forwards;
+}

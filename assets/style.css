@@ -1,0 +1,130 @@
+.what .main{
+    background-image:url(./doc.back.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+.our{
+    background-color:  #1d48519f;
+}
+.doct .card img{
+    border-radius:  300px;
+}
+.doct .card{
+    border: none;
+}
+.doct .card-title{
+    color: #0e2380f8;
+    font-size: 23px;
+    font-weight:700;
+}
+        table,
+        th,
+        td {
+            border: 1px solid rgb(172, 150, 150);
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        table td {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        table th {
+            font-size: 25px;
+        }
+        #panel,
+        #flip,
+        #table2,
+        #t2,
+        #table3,
+        #t3,
+        #table4,
+        #t4,
+        #table5,
+        #t5 {
+            padding: 5px;
+        }
+        #flip,
+        #table2,
+        #table3,
+        #table4,
+        #table5 {
+            background-color: #1d48512a;
+        }
+        #panel,
+        #t2,
+        #t3,
+        #t4,
+        #t5 {
+            display: none;
+        }
+        .text-center {
+    text-align: center;
+  }
+
+  .h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .h6 {
+    font-size: 14px;
+  }
+  li {
+    border-top: 1px solid #ccc;
+  }
+  @media screen and (max-width: 768px) {
+    .h1 {
+      font-size: 20px;
+    }
+
+    .h6 {
+      font-size: 12px;
+    }
+  }
+
+
+
+
+  /*///////////////////////////////////////nurse page///////////////////////////////////////*/
+  .nurse {
+    background-image: url(./Best\ Medical\ ServicE\ \(Facebook\ Cover\).png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 620px;
+}
+.detail .card {
+    border: none;
+}
+
+.detail .card img {
+    
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.detail .card img:hover {
+    transform: scale(1.1);
+}
+
+.team {
+    background-image: url(team5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    z-index: 0;
+}
+
+.nrs .team .how {
+    background-color: #1d4851ad;
+}
+
+
+
+
+/*//////////////////////////////////sweepers/lab attendant page/////////////////////////////*/
+
+

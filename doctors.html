@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctors</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="assets/bootsrap1.css">
+<link rel="stylesheet" href="assets/team.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <style>
+
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#flip").click(function () {
+                $("#panel").slideToggle("slow");
+            });
+            $("#table2").click(function () {
+                $("#t2").slideToggle("slow");
+            });
+            $("#table3").click(function () {
+                $("#t3").slideToggle("slow");
+            });
+            $("#table4").click(function () {
+                $("#t4").slideToggle("slow");
+            });
+            $("#table5").click(function () {
+                $("#t5").slideToggle("slow");
+            });
+            $("#table6").click(function () {
+                $("#t6").slideToggle("slow");
+            });
+            $("#table7").click(function () {
+                $("#t7").slideToggle("slow");
+            });
+            $("#table8").click(function () {
+                $("#t8").slideToggle("slow");
+            });
+        }); 
+    </script>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg shadow-lg sticky-top bg-white">
+        <div class="container">
+          <!-- Logo on the left -->
+          <a class="navbar-brand" href="#">
+            <img src="images/logo.png" width="40px" height="40px">
+            <b style="color: #00B4CC;"><i>Medical Haven</i></b>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    
+          <!-- Navigation items on the right -->
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item" id="dropdown">
+                <a class="nav-link active" aria-current="page" href="welcome.html">Our Purpose</a>
+                
+              </li><li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Features
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="find doctor.htm">Find Doctors</a></li>
+                </ul></li>
+                
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Our Team
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="doctors.html">Doctors</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+      
+                    <li><a class="dropdown-item" href="nurses.html">Nurses</a></li>
+                    <li>
+                      <hr class="dropdown-divider">
+                    </li>
+      
+                    <li><a class="dropdown-item" href="lab-attendend.html">SWweepers</a></li>
+                  </ul></li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Departments
+                    </a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="surgries.html">Surgery</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+        
+                      <li><a class="dropdown-item" href="opd.html">ODP</a></li>
+                      <li>
+                        <hr class="dropdown-divider">
+                      </li>
+        
+                      <li><a class="dropdown-item" href="labs.html">Labs</a></li>
+                    </ul>
+                  </li>
+                  
+              <!-- Add other list items here -->
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact Us</a>
+              </li>
+              <li class="custom-nav nav-item me-auto mb-lg-0 btn rounded-5 p-0 px-2 mx-2" >
+              <a class="nav-link" href="#">Login</a>
+    
+            </li>
+    
+            <li class="custom1-nav nav-item me-auto mb-lg-0 btn rounded-5 p-0 px-2 mx-2 ">
+              <a class="nav-link" href="#">Signup</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <section class="what">
+        <div class="main">
+            <div class="our text-center pt-5 " style="font-size: 20px;"><span class="">Our Governance</span><br>
+                <span>--------------</span><br>
+                <p class="fs-9" style="font-weight: 500; font-size: 40px;">
+                    Meet our remarkable leaders  dedicated <br>to bringing our vision  of Quality Healthcare to All
+                    to fruition</p><br>
+            </div>
+        </div>
+    </section>
+    <!--//////////////////////doctor section/////////////////////////-->
+    <div class="container mt-5 doct">
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="./images/Khalid-Khanani.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Khalid-Khanani</h5>
+                        <p class="h5 ps-4 ms-2  text-danger">Director</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./images/Mian-Muhammad-Ahsan.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Mian-Ahsan</h5>
+                        <p class="h5 ps-4 ms-2  text-danger">Director</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./images/Dr.-Amber-Rashid.webp" class="card-img-top" alt="...">
+                    <div class="card-body pt-4">
+                        <h5 class="card-title">Dr.-Amber</h5>
+                        <p class="h5 ps-4 ms-2  text-danger">Director</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./images/Abdul-Karim-Paracha.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Abdul-Karim</h5>
+                        <p class="h5 ps-4 ms-2  text-danger">Director</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./images/Adnan-Asdar-Ali.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Adnan-Asdar</h5>
+                        <p class="h5 ps-4 ms-2  text-danger">Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-md-5 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="./images/Nasim-Hyder.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Nasim-Hyder</h5>
+                        <p class="h5 ps-4 ms-2  text-danger">Director</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./images/Shaikh-Mohammad-Pervez.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">M.Shaikh</h5>
+                        <p class="h5 ps-4 ms-2  text-danger">Director</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./images/yahya-chawla-1.png" class="card-img-top" alt="...">
+                    <div class="card-body pt-4">
+                        <h5 class="card-title">yahya-chawla</h5>
+                        <p class="h5 ps-4 ms-2  text-danger">Director</p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="./images/Anwaar-Ahmad-Khan.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Anwaar-Ahmad</h5>
+                        <p class="h5 ps-4 ms-2  text-danger">Director</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/////////////////////////////////table 1///////////////////////////////////////////////////////-->
+    <div class="container text-danger h4" id="flip">      
+        Audit and finance <img class="justify-content-end" src="./images/sign-plus.svg" height="40px" width="30px" alt="Right-Aligned Image" style="float:right;">        
+</div>
+    <div class="container" id="panel">
+        <table class="container">
+            <tr>
+                <th>Nasim Hyder</th>
+                <td>Chairman of the Committee</td>
+            </tr>
+            <tr>
+                <td>Abdul Karim Paracha</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>Khalid Khanani</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>Khaleequr Rahman</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Mian Ahmad Fazal</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Salim Razzak Tabani</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Riaz A. Rehman Chamdia</td>
+                <td>Member</td>
+            </tr>
+
+        </table>
+
+    </div>
+    <!---///////////////////////////////table 2////////////////////////////////////////////-->
+    <div class="container text-danger h4" id="table2">      
+        Community Health<img class="justify-content-end" src="./images/sign-plus.svg" height="40px" width="30px" alt="Right-Aligned Image" style="float:right;">        
+</div>
+    <div class="container" id="t2">
+        <table class="container">
+            <tr>
+                <th>
+                    Abdul Karim Paracha</th>
+                <td>Chairman of the Committee</td>
+            </tr>
+            <tr>
+                <td> Dr. Amber Rashid</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>Nasim Hyder</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>Abdul Hameed Paracha</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Ali Akhai</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Khaleequr Rahman</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Muhammad Siddique Sheikh</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Sohaib Javed</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Tariq Shafi</td>
+                <td>Member</td>
+            </tr>
+
+        </table>
+
+    </div>
+    <!----///////////////////////////////table 3///////////////////////////////////////////-->
+    <div class="container text-danger h4" id="table3">      
+       Construction & Maintenance<img class="justify-content-end" src="./images/sign-plus.svg" height="40px" width="30px" alt="Right-Aligned Image" style="float:right;">        
+</div>
+    <div class="container" id="t3">
+        <table class="container">
+            <tr>
+                <th>
+                    Mian Muhammad Ahsan</th>
+                <td>Chairman of the Committee</td>
+            </tr>
+            <tr>
+                <td>Adnan Asdar Ali</td>
+                <td>Director</td>
+            </tr>
+
+            <tr>
+                <td>Khalid Khanani</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>Muhammad Yahya Chawla</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>Mian Ahmad Fazal</td>
+                <td>Member</td>
+            </tr>
+        </table>
+
+    </div>
+    <!---///////////////////////////////////////////table 4//////////////////////////////////-->
+    <div class="container text-danger h4" id="table4">      
+        Endowment<img class="justify-content-end" src="./images/sign-plus.svg" height="40px" width="30px" alt="Right-Aligned Image" style="float:right;">        
+</div>
+    <div class="container" id="t4">
+        <table class="container">
+            <tr>
+                <th>
+                    Muhammad Yahya Chawla</th>
+                <td>Chairman of the Committee</td>
+            </tr>
+            <tr>
+                <td>Abdul Karim Paracha</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>Khalid Khanani</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>Khaleequr Rahman</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Mian Ahmad Fazal</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Salim Razzak Tabani</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Riaz A. Rehman Chamdia</td>
+                <td>Member</td>
+            </tr>
+
+        </table>
+
+    </div>
+    <!----////////////////////////////////////////table 5/////////////////////////////////////////////-->
+    <div class="container text-danger h4" id="table5">      
+       Fundraising – National <img class="justify-content-end" src="./images/sign-plus.svg" height="40px" width="30px" alt="Right-Aligned Image" style="float:right;">        
+</div>
+    <div class="container" id="t5">
+        <table class="container">
+            <tr>
+                <th>
+                    Salim Razzak Tabani</th>
+                <td>Chairman of the Committee</td>
+            </tr>
+            <tr>
+                <td>Abdul Karim Paracha</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>Khalid Khanani</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>Khaleequr Rahman</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Mian Ahmad Fazal</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Salim Razzak Tabani</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Riaz A. Rehman Chamdia</td>
+                <td>Member</td>
+            </tr>
+
+        </table>
+
+    </div>
+    <!--//////////////////////////////////////////table 6//////////////////////////////////////////////////-->
+    <div class="container text-danger h4" id="table6">      
+       Fundraising – International <img class="justify-content-end" src="./images/sign-plus.svg" height="40px" width="30px" alt="Right-Aligned Image" style="float:right;">        
+</div>
+    <div class="container" id="t6">
+        <table class="container">
+            <tr>
+                <th>
+                    Khaleeq ur Rahman</th>
+                <td>Chairman of the Committee</td>
+            </tr>
+            <tr>
+                <td>Abdul Karim Paracha</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>Khalid Khanani</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>Khaleequr Rahman</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Mian Ahmad Fazal</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Salim Razzak Tabani</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Riaz A. Rehman Chamdia</td>
+                <td>Member</td>
+            </tr>
+
+        </table>
+
+    </div>
+    <!--/////////////////////////////////////////table 7/////////////////////////////////////////////////////-->
+    <div class="container text-danger h4" id="table7">      
+       Human Resource & Remuneration<img class="justify-content-end" src="./images/sign-plus.svg" height="40px" width="30px" alt="Right-Aligned Image" style="float:right;">        
+</div>
+    <div class="container" id="t7">
+        <table class="container">
+            <tr>
+                <th>
+
+                    Khalid Khanani</th>
+                <td>Chairman of the Committee</td>
+            </tr>
+            <tr>
+                <td>Abdul Karim Paracha</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>Khalid Khanani</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>Khaleequr Rahman</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Mian Ahmad Fazal</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Salim Razzak Tabani</td>
+                <td>Member</td>
+            </tr>
+            <tr>
+                <td>Riaz A. Rehman Chamdia</td>
+                <td>Member</td>
+            </tr>
+
+        </table>
+
+    </div>
+    <!----//////////////////////////////////////table 8///////////////////////////////////////////////////////////-->
+    <div class="container text-danger h4" id="table8">      
+      Information Technology<img class="justify-content-end" src="./images/sign-plus.svg" height="40px" width="30px" alt="Right-Aligned Image" style="float:right;">        
+</div>
+    <div class="container" id="t8">
+        <table class="container">
+            <tr>
+                <th>
+                    Khaleequr Rahman</th>
+                <td>Chairman of the Committee</td>
+            </tr>
+            <tr>
+                <td>Adnan Asdar Ali</td>
+                <td>Director</td>
+            </tr>
+
+            <tr>
+                <td>Khalid Khanani</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>Muhammad Yahya Chawla</td>
+                <td>Director</td>
+            </tr>
+            <tr>
+                <td>Mian Ahmad Fazal</td>
+                <td>Member</td>
+            </tr>
+        </table>
+
+    </div><br><br>
+    <!--////////////////////////SECTION 3/////////////-->
+   <section>
+    <div class="text-center h1 font-weight-bold" style="color: rgb(26, 26, 102);">
+        Board of Governors <br>
+        Indus University of Health Sciences
+      </div>
+      <div class=" container h6">
+        <p class="">The Board of Governors is a group of strategic leaders who aim to create a legacy of expert healthcare professionals ready to tackle health challenges facing</p>
+        <p class="">the local & global health landscape with compassion, empathy, and dignity.</p>
+        <br><br>
+        <ul>
+          <li>Muhammad Siddique Sheikh</li>
+          <li>Sultan A. Chawla</li>
+          <li>Dr. Shamshad Akhtar</li>
+          <li>Shahid Firoz</li>
+          <li>Mohammad Younus Dagha</li>
+          <li>Tariq Siddiqui</li>
+        </ul>
+      </div>
+   </section>
+
+
+
+
+
+
+   <!-------------footer----------------------------------------------------------------->
+
+   <div class="container">
+    <div class="text-center">
+        <h5>Follow Us</h5>
+        <ul class="footer-social list-unstyled">
+            <li class="d-inline p-2"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li class="d-inline p-2"><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li class="d-inline p-2"><a href="#"><i class="fa fa-instagram"></i></a></li>
+            <li class="d-inline p-2"><a href="#"><i class="fa fa-linkedin"></i></a></li>
+        </ul>
+    </div>
+    <br>
+    <hr>
+    
+    <footer>
+        <div class="row">
+            <div class="col-md-4 text-center">
+                <h5>Quick Links</h5>
+                <ul class="footer-links list-unstyled">
+                    <li><a class="text-decoration-none" href="labs.html">Our labs</a></li>
+                    <li><a class="text-decoration-none" href="surgries.html">Our surgeries</a></li>
+                    <li><a class="text-decoration-none" href="nurses.html">Our nurses</a></li>
+                    <li><a class="text-decoration-none" href="lab-attendend.html">Our sweepers</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center">
+                <h5>Our Departments</h5>
+                <ul class="footer-links list-unstyled">
+                    <li><a class="text-decoration-none" href="medical oncology.htm">All</a></li>
+                    <li><a class="text-decoration-none" href="Paedartic Surgery .htm">Pediatric surgery</a></li>
+                    <li><a class="text-decoration-none" href="Emergency.htm">Emergency</a></li>
+                    <li><a class="text-decoration-none" href="Obstatricas and gynecology.htm">Gynae and Obstetrics</a></li>
+                    <li><a class="text-decoration-none" href="radiology.htm">Radiology</a></li>
+                    <li><a class="text-decoration-none" href="Plastic Surgery .htm">Plastic surgery</a></li>
+                </ul>
+            </div>
+            <div class="col-md-4 text-center">
+                <h5>About us</h5>
+                <ul class="footer-links list-unstyled">
+                    <li><a class="text-decoration-none" href="index.html">Home</a></li>
+                    <li><a class="text-decoration-none" href="contact.html">Contact us</a></li>
+                    <li><a class="text-decoration-none" href="vision.html">Our Vision</a></li>
+                    <li><a class="text-decoration-none" href="mission.html">Our Mission</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    <hr>
+    <div class="text-center">
+        <p>&copy; 2023 Medical Haven. All rights reserved.</p>
+    </div>
+</div>
+
+</body>
+
+</html>

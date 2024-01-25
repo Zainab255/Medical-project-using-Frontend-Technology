@@ -1,0 +1,247 @@
+/* navigation bar start*/
+.custom-nav a{
+  color: #00B4CC;
+}
+.custom-nav a:hover{
+  color:#16c9e1;
+}
+
+.custom1-nav{
+  background-color: #00B4CC;
+}
+.custom1-nav a{
+  color:white;
+}
+.custom1-nav:hover{
+  background-color: #16c9e1;
+
+}
+.custom1-nav a:hover{
+  color:white;
+}
+
+/* navigation bar end */
+
+  @keyframes slideInLeft {
+    from {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+  .image-slider {
+    animation: slideInLeft 1s ease-in-out forwards;
+  }
+
+  .image-section {
+    text-align: center;
+    background-color: #f5f5f5;
+  }
+
+  .image-slider {
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    /* Center align images */
+  }
+
+  .image-slider img {
+    max-width: 100%;
+    height: auto;
+    display: none;
+  }
+
+  @keyframes slideInRight {
+    from {
+      transform: translateX(100%);
+      opacity: 0;
+    }
+
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+  .card-img-top {
+    object-fit: cover;
+  }
+  .card-title b {
+    color:#00B4CC;
+  }
+  /* Add more shadow and ensure same height for all cards */
+  .card {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    height: 100%;
+  }
+  .card {
+    animation: slideInRight 1s ease-in-out forwards;
+  }
+
+  .card {
+    margin-bottom: 20px;
+  }
+
+  .card-body {
+    text-align: center;
+  }
+hr{
+  color: rgb(160, 160, 160);
+}
+/* footer */
+.footer-social li a{
+  color:black;
+}
+  .footer-links li a{
+    color:#00B4CC
+  }
+  /* footer end */
+  .about-section {
+    background-color: #f1f1f1;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+
+  .services-section {
+    background-color: #f5f5f5;
+  }
+
+  .services-list {
+    list-style: none;
+    padding-left: 0;
+  }
+
+  .services-list li {
+    margin-bottom: 10px;
+  }
+
+  #dropdown-menu {
+    display: none;
+  }
+
+  #dropdown:hover #dropdown-menu {
+    display: block;
+  }
+
+  #dropdown.active #dropdown-menu {
+    display: block;
+  }
+  /*///////////////////////////////////////nurse page///////////////////////////////////////*/
+  
+.doct .card img{
+    border-radius:  300px;
+}
+.doct .card{
+    border: none;
+}
+.doct .card-title{
+    color: #0e2380f8;
+    font-size: 23px;
+    font-weight:700;
+}
+        table,
+        th,
+        td {
+            border: 1px solid rgb(172, 150, 150);
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        table td {
+            font-size: 20px;
+            font-weight: 400;
+        }
+
+        table th {
+            font-size: 25px;
+        }
+        #panel,
+        #flip,
+        #table2,
+        #t2,
+        #table3,
+        #t3,
+        #table4,
+        #t4,
+        #table5,
+        #t5,#table6,
+        #t6,#table7,
+        #t7,#table8,
+        #t8 {
+            padding: 5px;
+        }
+        #flip,
+        #table2,
+        #table3,
+        #table4,
+        #table5, #table6,#table7,#table8 {
+            background-color: #1d48512a;
+        }
+        #panel,
+        #t2,
+        #t3,
+        #t4,
+        #t5,#t6,#t7,#t8{
+            display: none;
+        }
+        .text-center {
+    text-align: center;
+  }
+
+  .h1 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+
+  .h6 {
+    font-size: 14px;
+  }
+  li {
+    border-top: 1px solid #ccc;
+  }
+  @media screen and (max-width: 768px) {
+    .h1 {
+      font-size: 20px;
+    }
+
+    .h6 {
+      font-size: 12px;
+    }
+  }
+  @keyframes slideInLeft {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.nrs{
+    animation: slideInLeft 1s ease-in-out forwards;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Apply the animation to the card */
+.nurse{
+    animation: zoomIn 1s ease-in-out forwards;
+}

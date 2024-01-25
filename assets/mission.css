@@ -1,0 +1,40 @@
+body {
+    background-image: url("service.jpeg");
+    background-size: cover;
+  }
+      .card-body {
+          display: flex;
+
+      }
+      .card-body img {
+          max-height: 150px;
+      }       
+@keyframes slideInLeft {
+  from {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+.card .c1{
+  animation: slideInLeft 1s ease-in-out forwards;
+}
+/* Define the animation */
+@keyframes slideInRight {
+  from {
+      transform: translateX(100%);
+      opacity: 0;
+  }
+  to {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+
+.card .c2{
+  animation: slideInRight 1s ease-in-out forwards;
+}

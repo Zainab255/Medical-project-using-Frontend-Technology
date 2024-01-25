@@ -1,0 +1,144 @@
+.bg-heading {
+    background-image: linear-gradient(rgba(32, 60, 83, 0.7), rgba(40, 89, 129, 0.7)), url('image/backkimge.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Additional custom styles for content */
+.bg-heading h1 {
+    font-size: 55px;
+     margin: 0;
+}
+.theme{
+    color:#00B4CC;
+}
+.custom-vr{
+    border-right: 1px solid rgb(193, 193, 193);
+}
+.sidebar {
+    /* Set height and styling for the sidebar */
+    background-color:white;
+    padding:10px;
+    color: #00B4CC;
+    
+}
+.bar{
+    color:black;
+}
+
+
+.content {
+    /* Set styling for the content area */
+    padding:10px;
+}
+
+/* Card styles */
+.card {
+    border: 1px solid #ddd;
+    border-radius:8px;
+    margin: 1px;
+    padding:0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color:#1d4851;
+}
+
+.card-img-top {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-title {
+    font-size:18px;
+    margin-bottom:5px;
+}
+
+.card-body {
+    padding:10px;
+}
+
+.card-body a {
+    color:#00B4CC;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Container styles */
+#hero-section{
+    /* Add any specific styles for the hero section if needed */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+/*looking--------------------*/
+.bi-heading {
+    background-image: linear-gradient(rgba(42, 119, 155, 0.7), rgba(36, 81, 117, 0.7)), url('/image/istockphoto-1413600764-612x612.jpg');
+
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+.bi-heading h1{
+    font-size: 40px;
+}
+.bi-heading p{
+    font-size:20px;
+}
+
+.info img{
+    border-radius: 150px;
+}
+.info {
+        padding-top: 5rem;
+    }
+
+    .text-primary {
+        color: #00B4CC;
+    }
+
+    .fs-5 {
+        font-size: 1.25rem;
+    }
+
+    .h1 {
+        font-size: 2.5rem;
+    }
+
+    .font-weight-bold {
+        font-weight: bold;
+    }
+
+    .h6 {
+        font-size: 1rem;
+    }
+
+    /* Responsive adjustments */
+    @media (max-width: 576px) {
+        .col-4 {
+            text-align: center;
+        }
+
+        .col-8.pt-5 {
+            text-align: center;
+            padding-top: 1.5rem;
+        }
+    }
